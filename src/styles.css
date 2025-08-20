@@ -1,0 +1,18 @@
+.background_gradient {
+    background: #0B1727;
+    background: linear-gradient(90deg, rgba(11, 23, 39, 1) 0%, rgba(42, 191, 187, 1) 35%);
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.font-gt-walsheim {
+  font-family: 'GT Walsheim Trial', sans-serif; /* Fallback to sans-serif */
+}
+
+/* For spinner loading */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.spinner {
+    animation: spin 1s linear infinite; /* Adjust duration as needed */
+}
