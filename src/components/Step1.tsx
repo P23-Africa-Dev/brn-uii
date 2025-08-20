@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { useState } from "react";
 
 interface Step1Props {
-  onNext: (data: any) => void;
+  onNext: (data: unknown) => void;
 }
 
 const Step1: React.FC<Step1Props> = ({ onNext }) => {

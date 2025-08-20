@@ -1,14 +1,14 @@
 import { Button } from "./ui/button";
 import { useState } from "react";
 interface Step3Props {
-  onNext: (data: any) => void;
+  onNext: (data: unknown) => void;
   onPrevious: () => void;
 }
 interface Skills {
   greatAt: string[];
   canHelpWith: string[];
 }
-const Step3: React.FC<Step3Props> = ({ onNext, onPrevious }) => {
+const Step3: React.FC<Step3Props> = ({ onNext }) => {
   const [skills, setSkills] = useState<Skills>({
     greatAt: [],
     canHelpWith: [],

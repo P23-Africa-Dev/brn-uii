@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { useState } from "react";
 interface Step2Props {
-    onNext: (data: any) => void;
+    onNext: (data: unknown) => void;
     onPrevious: () => void;
 }
 interface FormData {
@@ -12,7 +12,8 @@ interface FormData {
     industry: string;
     interestedIndustries: string[];
 }
-const Step2: React.FC<Step2Props> = ({ onNext, onPrevious }) => {
+// const Step2: React.FC<Step2Props> = ({ onNext, onPrevious }) => {
+const Step2: React.FC<Step2Props> = ({ onNext }) => {
     const [formData, setFormData] = useState<FormData>({
         companyName: "",
         companyDescription: "",

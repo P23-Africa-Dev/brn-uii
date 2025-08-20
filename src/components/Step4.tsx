@@ -52,10 +52,11 @@ const Toggle = React.forwardRef<HTMLButtonElement, ToggleProps>(({ className = '
 Toggle.displayName = "Toggle";
 // Step4 Component
 interface Step4Props {
-  onNext: (data: any) => void;
+  onNext: (data: unknown) => void;
   onPrevious: () => void;
 }
-const Step4: React.FC<Step4Props> = ({ onNext, onPrevious }) => {
+// const Step4: React.FC<Step4Props> = ({ onNext, onPrevious }) => {
+const Step4: React.FC<Step4Props> = ({ onNext }) => {
   const [visibility, setVisibility] = useState({
     activateSmartMatching: false,
     showProfileInSearches: false,
